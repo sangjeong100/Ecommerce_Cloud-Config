@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/ecommerce?characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: '{cipher}d1203ff1c75d3bd562ae07d2583546e6499189269072cb65e359667259156cd4' #자동 복호화 
+  jpa:
+    database-platform: org.hibernate.dialect.MariaDB103Dialect
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true 
