@@ -12,3 +12,6 @@ spring:
     properties:
       hibernate:
         format_sql: true 
+
+order-service:
+  url: http://127.0.0.1:8000/order-service/%s/orders
